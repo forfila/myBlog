@@ -1,0 +1,392 @@
+html { font-size:10px; }
+.App {
+  text-align: center;
+}
+
+.main-container{
+  text-align: center;
+}
+
+.black-nav{
+  background: whitesmoke;
+  display: flex;
+  color: black;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-bottom: 1px solid #DEE2E6;;
+  
+}
+.black-nav a{
+  color: black;
+}
+
+.nav-menu{
+  justify-content: start;
+  display: flex;
+}
+
+.list {
+  margin-top : 3rem;
+  text-align : left;
+
+  width: 89%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #DEE2E6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 3rem;
+  
+}
+
+.list-child{
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  height: 300px;
+  margin-top : 30px;
+  width: 250px;
+  max-width: 300px;
+  min-width: 300px;
+  margin-left: 32px;
+}
+.list-child img{
+  height: 100%;
+  width: 100%;
+}
+.list-child p,h3{
+  text-align: center;
+}
+.list-img{
+  height: 50%;
+}
+.search-list{
+  display: inline-block;
+}
+.searchinput{
+  width: 50%;
+  margin: 0px auto;
+  display: inline-block;
+}
+.searchinput input{
+  width: 100%;
+  margin-top: 60px;
+  height: 60px;
+  background-color: whitesmoke;
+  border: 1px solid #868E96;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: large;
+}
+.searchinput-click{
+  height: 70px;
+  border: 0px;
+  margin-left: 30px;
+  background: whitesmoke;
+  cursor: pointer;
+  font-size: large;
+}
+.searchinput p{
+  width: 5%;
+  margin-top: 20px;
+  
+}
+.myPagelistbox{
+  margin-top: 10px;
+  
+}
+.myPagelist{
+  
+  border-radius: 4px;
+  height: 200px;
+  margin-bottom: 50px;
+  
+  
+}
+.detailPage{
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+}
+
+.write {
+  margin-top : 30px;
+  margin-bottom : 30px;
+  width: 100%;
+  
+}
+.write-box{
+  width: 50%;
+  float: left;
+}
+
+.writing-title {
+  width: 43%;
+  float: right;
+  height: 54rem;
+  border-radius: 5px;
+  background: white;
+  margin-right: 50px;
+}
+.writeinput-title {
+  padding : 10px;
+  border-radius : 5px;
+  width : 80%;
+  border : 0;
+  font-size: 50px;
+}
+.writeinput-content{
+  padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 80%;
+    border: 0;
+    font-size: 50px;
+    height: 410px;
+}
+.write-title-input{
+ 
+  font-size: 50px;
+}
+.write-content-input{
+  font-size: 50px;
+
+}
+.write-title-input-title{
+  width: 100%;
+  height: 90px;
+  border: 0px;
+  font-size: 50px;
+}
+.write-title-input-content{
+  width: 100%;
+  height: 440px;
+  border: 0px;
+  font-size: 50px;
+}
+.hr{
+  background: rgb(169, 171, 173);
+    height: 8px;
+    width: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    margin-left: 7rem;
+}
+.writebutton {
+  display : block;
+  margin : auto;
+  margin-top : 10px;
+  position: relative;
+
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.login{
+  position:fixed;
+  width: 600px;
+  height: 380px;
+  background: white;
+  left: 31%
+
+}
+.login-img{
+  width: 186px;
+  height: 100%;
+  float: left;
+  border-right: 1px solid black;
+}
+.login-img img{
+  width: 100%;
+  height: 100%;
+
+}
+.login-right{
+  width: 240px;
+  float: right;
+  margin-right: 150px;
+
+}
+.login-nav{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.login-title{
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: left;
+}
+.login-input{
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.login-input input{
+  margin-bottom: 10px;
+  margin-left: 30px;
+  width: 250px;
+  height: 30px;
+}
+#login-btn{
+  width: 258px;
+  margin-left: 30px;
+  height: 30px;
+}
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.register{
+  vertical-align: bottom;
+  margin-top: 10px;
+  
+}
+.register button{
+  background-color: white;
+  border : 0px;
+  cursor: pointer;
+  
+}
+
+
+.close-btn { 
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.registerDiv input{
+  margin-bottom: 20px;
+  margin-left: 30px;
+  width: 250px;
+  height: 30px;
+  vertical-align: middle;
+}
+.registerDiv{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.registerDiv h3{
+  margin-top: 0;
+}
+
+.registerId{
+  vertical-align: middle;
+}
+.registerClick{
+  width: 258px;
+  background-color: white;
+  border : 0px;
+  cursor: pointer;
+}
+
+.registerDiv button{
+  margin-left: 30px;
+}
+.login-nav div{
+  padding-right:  20px; ;
+}
+.myPage-background{
+  width: 50%;
+  margin: 0 auto;
+}
+.myPage-Id{
+  height: 10rem;
+  border-bottom: 1px solid seagreen;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+ 
+}
+.myPagelistbox{
+  text-align: left;
+  padding-bottom: 20px;
+}
+.myPagelistbox h3{
+  text-align: left;
+  font-size: 30px;
+}
+.myPagelistbox p{
+  font-size: 20px;
+}
+.myPage2{
+  height: 500px;
+  margin-top: 30px;
+}
+.myPage2 div{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.clientset{
+  width: 300px;
+  display: flex;  
+  flex-direction: column;
+  margin: 0px auto;
+  
+}
+.clientsetline{
+  border-bottom: 1px solid #DEE2E6;
+}
+.clientset input{
+  margin-top: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.clientset p{
+  width: 100px;
+  float: left;
+  margin-top: 20px;
+}
+.delete-btn{
+  width: 100px;
+}
+.subDrop{
+  position: absolute;
+  right: 0px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #DEE2E6;
+  padding-left:15px ;
+  margin-top: 5px;
+
+  
+}
+
+@media screen and (max-width: 1919px)
+ { body {
+    background-color: whitesmoke;
+    font-family: 'nanumsquare';
+    display: block;
+  }
+ }
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
