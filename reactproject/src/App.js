@@ -23,8 +23,6 @@ function App() {
 
   //로그인 세션
   let [loginbox, setloginbox] = useState("");
-  
-
   let [loginId, setloginId] = useState("");
   let [loginPw, setloginPw] = useState("");
   function login(){
@@ -226,7 +224,7 @@ function App() {
         <div className="App">
           <div className='main-container'>
                   <div className='black-nav'>
-                    <Link to="/" className='text-link '><div>개발 Blog</div></Link>
+                    <Link to="/" className='text-link '><div>나의 Blog</div></Link>
                     <div className='nav-menu'>
                         
                       {loginNav === 1 ?
@@ -395,9 +393,6 @@ function App() {
                         })}
                         </div>
                       </div>
-                        <div>
-                          이메일 주소 : forfila@naver.com
-                        </div>
                       </div>
                     </div>
                     
@@ -457,25 +452,12 @@ function Detailpage(props){
   console.log(id)
   return(
     <div className='detailPage'>
-      {/* <h3>{props.title[id.id].title}</h3> */}
-      {/* <p>{props.title[id.id].date}</p> */}
-      {/* <p>{props.title[id.id].내용}</p> */}
       <h3>{props.detailP.title}</h3>
       <p>{props.detailP.date}</p>
       <p>{props.detailP.내용}</p>
     </div>
   )
 }
-{/* /* 
-function myPage(props){
 
-  return(
-    <div className='myPagedetail'>
-      <h3>{props.title[id.id].title}</h3>
-      <p>{props.title[id.id].date}</p>
-      <p>{props.title[id.id].내용}</p>
-    </div>
-  )
-} */}
 
 export default App;

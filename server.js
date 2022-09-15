@@ -194,7 +194,8 @@ app.post('/register', function(req,res){
         var engNum =  /^[a-zA-Z0-9]*$/;
         if(engNum.test(req.body.registerId)){
           if(result == null){
-            db.collection('register').insertOne({id: req.body.registerId, 비밀번호 : req.body.registerPw ,_id : totalId , name : req.body.registerName, phone : req.body.registerPhone}, function(err,result){
+            db.collection('register').insertOne({id: req.body.registerId, 비밀번호 : req.body.registerPw ,_id : totalId , name : req.body.registerName, 
+              phone : req.body.registerPhone}, function(err,result){
                   db.collection('registerCount').updateOne({name : '아이디번호'},{ $inc :{totalId:1}},function(err,result){
                     if(err){
                         return console.log(err)
@@ -202,7 +203,6 @@ app.post('/register', function(req,res){
                         res.send('<script>alert("회원가입을 축하합니다."); window.location.href = "/";</script>')
                     }
                   })
-                  
                 })
           }else{
             var registerNum = 1;
@@ -295,10 +295,6 @@ app.get('/search',function(req,res){
       }
     }
   }]
-  // db.collection('post').find({title : sTitle }).toArray((에러,결과)=>{
-  //   console.log(결과)
-  //   res.json(결과)
-  // })
     db.collection('post').aggregate(searchCondition).toArray((err,result)=>{
       res.json(result);
     })
